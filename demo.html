@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+			.loading{
+				width: 80px;
+				height: 40px;
+				margin: 100px auto;
+			}
+			.loading span{
+				display: inline-block;
+				width: 8px;
+				height: 100%;
+				border-radius: 4px;
+				background-color: lightgreen;
+				animation:load 1s ease infinite;
+			}
+			@keyframes load{
+				0%,100%{
+					height:40px;
+					background-color: lightgreen; 
+				}
+				50%{
+					height:70px;
+					background-color: lightblue;
+					margin:-15px 0;
+				}
+			}
+			.loading span:nth-of-type(2){
+				animation-delay:0.2s;
+			}
+			.loading span:nth-of-type(3){
+				animation-delay:0.4s;
+			}
+			.loading span:nth-of-type(4){
+				animation-delay:0.6s;
+			}
+			.loading span:nth-of-type(5){
+				animation-delay:0.8s;
+			}
+        </style>
+    </head>
+    <body>
+    	<div class="loading">
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    	</div>
+    </body>
+</html>
